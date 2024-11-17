@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bella's 17th Birthday Party</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&family=Noto+Serif:wght@800&family=Oswald:wght@200;300;500;700&family=Quicksand&display=swap" rel="stylesheet">
+
+      
+        
+        <style>
+            /*rgb(238 171 126)
+            rgb(124 61 7)
+            rgb(246 216 178)*/
+            @font-face {
+    font-family: 'Title'; 
+    src: url("font/csarcaneregulardemo-wo2y3-webfont.woff2") format('woff2'),
+         url("font/csarcaneregulardemo-wo2y3-webfont.woff") format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background-image: url("pic/bg.jpeg");
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+/* Set specific elements to 80% width */
+.or1, .or2, .countdown-container, #countdown, .time-box, .titlet, .titles, .dates, .location-container, .dc-container,.dcf, .dcs, .dct, .rsvps{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.or1 {
+    width: 70%;
+}
+
+.or2 {
+    width: 70%;
+    rotate: 180deg;
+}
+
+.or3 {
+    width: 60%;
+    
+}
+
+.or4 {
+    width: 60%;
+    rotate: 180deg;
+    margin-bottom: 20%;
+}
+/* Title retains 100% width */
+.title {
+    width: 100%;
+    font-family: "Title";
+    color: rgb(124, 61, 7);
+    font-size: 5.5em;
+    margin: 0;
+    margin-top: 3%;
+    padding: 1.5% 0;
+    background-color: rgb(238, 171, 126);
+    border-top: 2px solid rgb(124, 61, 7); /* Top border */
+    border-bottom: 2px solid rgb(124, 61, 7); /* Bottom border */
+    text-shadow: 
+        -1.5px -1.5px 0 rgb(246 216 178), /* Top-left shadow */
+         1.5px -1.5px 0 rgb(246 216 178), /* Top-right shadow */
+        -1.5px  1.5px 0 rgb(246 216 178), /* Bottom-left shadow */
+         1.5px  1.5px 0 rgb(246 216 178); /* Bottom-right shadow */
+}
+
+.titlet {
+    font-family: "Title";
+    font-size: 3em;
+    margin-top: 0px;
+    margin-bottom: 3%;
+    color: rgb(124, 61, 7);
+}
+
+.titles {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    margin-top: 3%;
+    color: rgb(124, 61, 7);
+    margin-bottom: 40%;
+
+}
+
+.countdown-container {
+    text-align: center;
+}
+
+.date {
+    width: 100%;
+    font-family: "Title";
+    font-size: 3.5em;
+    margin: 0;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: rgb(124, 61, 7);
+    text-shadow: 
+        -1.5px -1.5px 0 rgb(246 216 178), /* Top-left shadow */
+         1.5px -1.5px 0 rgb(246 216 178), /* Top-right shadow */
+        -1.5px  1.5px 0 rgb(246 216 178), /* Bottom-left shadow */
+         1.5px  1.5px 0 rgb(246 216 178);
+    margin-top: 3%;
+    padding: 1.5% 0;
+    background-color: rgb(238, 171, 126);
+    border-top: 2px solid rgb(124, 61, 7); /* Top border */
+    border-bottom: 2px solid rgb(124, 61, 7);
+}
+
+.dates {
+    font-size: 1.5em;
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+
+.countdown-container{
+    width: 100%;
+    background-color: rgba(223, 137, 80, 0.75);
+    margin-top: 0;
+    padding-top: 2%;
+    color:rgb(246 216 178);
+    padding-bottom: 32%;
+}
+#countdown {
+    display: flex;
+    gap: 1%;
+    font-size: 1.5em;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 1%;
+    max-width: 80px;
+}
+
+.time-box span {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.location {
+    width: 100%;
+    font-family: "Title";
+    font-size: 3.5em;
+    margin: 0;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: rgb(124, 61, 7);
+    text-shadow: 
+        -1.5px -1.5px 0 rgb(246 216 178), /* Top-left shadow */
+         1.5px -1.5px 0 rgb(246 216 178), /* Top-right shadow */
+        -1.5px  1.5px 0 rgb(246 216 178), /* Bottom-left shadow */
+         1.5px  1.5px 0 rgb(246 216 178);
+    margin-top: 0%;
+    padding: 1.5% 0;
+    background-color: rgb(238, 171, 126);
+    border-top: 2px solid rgb(124, 61, 7); /* Top border */
+    border-bottom: 2px solid rgb(124, 61, 7);
+}
+
+.location-container{
+    color:rgb(124, 61, 7) ;
+    padding-top: 2%;
+    padding-bottom: 32%;
+}
+
+.locations{
+    font-size: 2em;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.locationt{
+    font-size: 1.2em;
+    margin-top: 1.5%;
+    margin-bottom: 35px;
+}
+
+.locationf{
+    text-decoration: none;
+    padding: 4px 15px;
+    border: 1.5px solid rgb(124, 61, 7);
+    color: rgb(124, 61, 7);
+    font-size: 1.2em;
+
+}
+
+.dc {
+    width: 100%;
+    font-family: "Title";
+    font-size: 3.5em;
+    margin: 0;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: rgb(124, 61, 7);
+    text-shadow: 
+        -1.5px -1.5px 0 rgb(246 216 178), /* Top-left shadow */
+         1.5px -1.5px 0 rgb(246 216 178), /* Top-right shadow */
+        -1.5px  1.5px 0 rgb(246 216 178), /* Bottom-left shadow */
+         1.5px  1.5px 0 rgb(246 216 178);
+    margin-top: 0%;
+    padding: 1.5% 0;
+    background-color: rgb(238, 171, 126);
+    border-top: 2px solid rgb(124, 61, 7); /* Top border */
+    border-bottom: 2px solid rgb(124, 61, 7);
+}
+
+.dc-container{
+    width: 100%;
+    background-color: rgba(223, 137, 80, 0.75);
+    margin-top: 0;
+    padding-top: 2%;
+    color:rgb(246 216 178);
+    padding-bottom: 32%;
+}
+
+.dcs{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.dct{
+    font-size: 1.2em;
+    font-family: "Great Vibes", cursive;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.dcf{
+    font-size: 1.2em;
+}
+
+.rsvp{
+    width: 100%;
+    font-family: "Title";
+    font-size: 3.5em;
+    margin: 0;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: rgb(124, 61, 7);
+    text-shadow: 
+        -1.5px -1.5px 0 rgb(246 216 178), /* Top-left shadow */
+         1.5px -1.5px 0 rgb(246 216 178), /* Top-right shadow */
+        -1.5px  1.5px 0 rgb(246 216 178), /* Bottom-left shadow */
+         1.5px  1.5px 0 rgb(246 216 178);
+    margin-top: 0%;
+    padding: 1.5% 0;
+    background-color: rgb(238, 171, 126);
+    border-top: 2px solid rgb(124, 61, 7); /* Top border */
+    border-bottom: 2px solid rgb(124, 61, 7);
+}
+
+.rsvps{
+    color:rgb(124, 61, 7) ;
+    padding-top: 2%;
+    font-size: 1.2em;
+}
+
+.rsvpv{
+    color:rgb(124, 61, 7) ;
+    font-size: 1.2em;
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+
+.rsvpt{
+    margin-bottom: 10%;
+}
+
+.credit{
+    font-size: 1.3em;
+    color: rgb(124, 61, 7);
+    margin-bottom: 5px;
+    padding: 0;
+    font-family: "Great Vibes", cursive;
+    font-weight: bold;
+}
+
+
+    
+            /* Responsive Scaling */
+            @media (max-width: 768px) {
+                #countdown, .rsvpt {
+                    transform: scale(0.8); /* Scale down for smaller screens */
+                }
+            }
+    
+            @media (max-width: 480px) {
+                #countdown, .rsvpt {
+                    transform: scale(0.6); /* Further scale down for very small screens */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <audio autoplay loop>
+            <source src="song/WhatsApp Video 2024-11-10 at 15.21.12_227ebdbd.mp3" type="audio/mpeg">
+        </audio>
+       <div id="head">
+        <img class="or1" src="pic/an4.png">
+        <p class="title">BELLA</p>
+        <p class="titlet">Sweet Seventeen Party</p>
+        <img class="or2" src="pic/an4.png">
+        <p class="titles">
+            Step into a world of elegance and enchantment as we gather to honor Bella on her Sweet 17th. 
+            Let the evening unfold in grace and grandeur, where every moment shimmers with joy and beauty. 
+            We invite you to revel in this special celebration, marking the blossoming of youth and the dawn of new dreams.
+        </p>
+       </div>
+       <img src="pic/an2.png" class="or3">
+       <p class="date">The Honored Day</p>
+       <div class="countdown-container">
+        <p class="dates">Friday, 22 November 2024 | 6.00 pm</p>
+        <div id="countdown">
+            <div class="time-box"><span id="days"></span>Days</div>
+            <div class="time-box"><span id="hours"></span>Hours</div>
+            <div class="time-box"><span id="minutes"></span>Minutes</div>
+            <div class="time-box"><span id="seconds"></span>Seconds</div>
+        </div>
+    </div>
+        <p class="location">The Place of Gathering</p>
+        <div class="location-container">
+            <p class="locations">Sixteen8 3rd floor</p>
+            <p class="locationt">at Ki Mangunsarkoro No.38, Karangkidul, Semarang, Central Java 50135 Street</p>
+            <a class="locationf" href="https://www.google.com/maps/place/Sixteen+8/@-6.9926364,110.4270807,17z/data=!3m1!4b1!4m6!3m5!1s0x2e708ca81dcaa48d:0x9ff132c870e26a50!8m2!3d-6.9926417!4d110.4296556!16s%2Fg%2F1q6cpfpdb?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D">map</a>
+        </div>
+        <p class="dc">Dress Code </p>
+        <div class="dc-container">
+            <p class="dcs">Black</p>
+            <p class="dct">Dress in the Sophistication of Black, a color as timeless as the night.</p>
+            <p class="dcf">We kindly ask guests to uphold the elegance, please no hoodies or T-shirts.</p>
+        </div>
+        <p class="rsvp">RSVP</p>
+        <p class="rsvps">Secure Your Presence on This Grand Evening. Kindly confirm your attendance below.</p>
+        <div class="rsvpt-container">
+            <iframe class="rsvpt" src="https://docs.google.com/forms/d/e/1FAIpQLScXOqLtQkSN1f5jIJin0PiqqEgiWHD2xkDNSZV_HqVmGGjaxA/viewform?embedded=true" width="400" height="382" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <img src="pic/an2.png" class="or4">
+        <p class="credit">Gabriella Putri Wijaya</p>
+
+
+
+        <div style="display: none;">
+            <iframe 
+                allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" 
+                frameborder="0" 
+                height="450" 
+                style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" 
+                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" 
+                src="https://embed.music.apple.com/us/album/copland-appalachian-spring-simple-gifts-single/1452256040?autoplay=1">
+            </iframe>
+        </div>
+    
+        <!-- JavaScript for countdown timer -->
+        <script>
+            const countdownDate = new Date("November 22, 2024 18:00:00").getTime();
+    
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const distance = countdownDate - now;
+    
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+                document.getElementById("days").innerText = days;
+                document.getElementById("hours").innerText = hours;
+                document.getElementById("minutes").innerText = minutes;
+                document.getElementById("seconds").innerText = seconds;
+    
+                if (distance < 0) {
+                    clearInterval(countdownInterval);
+                    document.getElementById("countdown").innerHTML = "The celebration has begun!";
+                }
+            }
+    
+            const countdownInterval = setInterval(updateCountdown, 1000);
+        </script>
+    </body>
+</html>
